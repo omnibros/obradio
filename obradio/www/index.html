@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *">
+<meta charset="utf-8" />
+
+<html>
+
+<head>
+    <title>OB Radio - 24/7 EDM</title>
+    <link rel="icon" type="image/png" href="images/obrad_favicon.png" />
+    <link href="css/index.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
+</head>
+
+<script src="cordova.js"></script>
+<script src="scripts/platformOverrides.js"></script>
+<script src="scripts/index.js"></script>
+<script src="scripts/obCustom.js"></script>
+
+<body onload="initPage()">
+<div id="body">
+
+    <div id="obLogoDiv" class="obAudioPlayerClass">
+        <a href="#" onClick="OpenOBHome()">
+            <img id="obLogo" src="images/ob_logo.png" alt="Omnibros Online" class="obAudioPlayerClass" />
+        </a>
+		</br></br>
+    </div>
+
+    <div id="obAudioPlayerWidget" class="obAudioPlayerClass">
+
+        <!--OB RADIO BANNER-->
+        <div id="obRadioDiv" class="obAudioPlayerClass">
+            <a id="obRadioButton" href="#" onClick="initPage()" class="obAudioPlayerClass">
+                <img id="obRadioBanner" src="images/ob_radio_logo.png" alt="OB Radio" class="obAudioPlayerClass" />
+            </a>
+        </div>  <!--END OB Radio Banner -->
+        <!--OB SIGNAL PLAYER CONTROLS-->
+        <div id="playerDiv" class="obAudioPlayerClass">
+            <a id="playerControls" href="#" onClick="playerStartStop()" class="obAudioPlayerClass">
+                <img id="signalMeter" src="images/signalPlayerLoading.gif" alt="SignalMeterGIF" class="obAudioPlayerClass" />
+            </a>
+
+            <!-- TEXT STATS FOR SIGNAL PLAYER-->
+            <div id="playerStats">
+                <div id="playingDJ" class="playerStats playingArtist">DJ: </div>
+
+                <div id="isLiveText" class="playerStats playingBroadcast">Broadcast:</div>
+
+                <div id="isLiveTextValue" class="playerStats playingBroadcastValue">Loading</div>
+
+                <div id="playingSong" class="playerStats playingSong">Mix: </div>
+
+                <div id="playTime" class="playerStats curPlayTime">Play Time:</div>
+
+                <div id="playTimeValue" class="playerStats curPlayTimeValue">__:__:__</div>
+            </div>
+
+        </div> <!--######END OF PLAYERCONTROLS DIV-->
+        <!--HTML5 AUDIO ELEMENT (HIDDEN)-->
+        <div id="audioElementDiv" class="obAudioPlayerClass">
+            <audio id="obRadioPlayer" onloadedmetadata="playerStreamLoaded();" ontimeupdate="playTimeUpdate(Math.floor(this.currentTime))" class="obAudioPlayerClass">
+                <source src="#" type="audio/mp3" />
+            </audio>
+        </div>  <!--END HTML55 AUDIO ELEMENT-->
+
+    </div>  <!--END OB Audio Player Widget -->
+</div>
+</body>
+</html>

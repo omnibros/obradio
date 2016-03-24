@@ -1,0 +1,124 @@
+		
+		body {
+			width:100%;
+			height:100%;
+			background:#000000;
+			color: #CCCCCC;
+			margin: 0px;
+			padding: 0px;
+			display: table-cell;
+			vertical-align:middle;
+		}
+
+	
+		html {
+			width:100%;
+			height:90%;
+			display: table;
+		}
+		
+		table { 
+			border-collapse: collapse;
+			border-spacing: 0px;
+		}
+
+		
+		.obAudioPlayerClass {
+			width: 100%;
+		}
+
+		.playerStats {
+			position: absolute;
+			color: #BBDDDD;
+			font-size: 8pt;
+			font-weight: bold;
+			font-family: arial;
+			opacity: 0.5;
+			display:inline-block;
+			
+		}
+	
+		.isLiveText {
+			position: absolute;
+			color: #DDAA33;
+			font-size: 8pt;
+			font-weight: bold;
+			font-family: arial;
+			opacity: 0.5;
+			display:inline-block;
+			
+		}
+	
+		#obLogo {
+			vertical-align:bottom;
+		}
+		
+		#obRadioBanner {
+			vertical-align:bottom;
+
+		}
+		
+		#signalMeter {
+			vertical-align:top;
+		}		
+		
+		#playerDiv {
+			position:relative;
+		}
+		
+		.curPlayTime {
+			left:60%;
+			top:70%;
+		}
+		
+		.curPlayTimeValue {
+			left: 83%;
+			top: 70%;
+		}
+		
+		.playingBroadcast {
+			left: 60%;
+			top: 13%;
+		}
+		
+		.playingBroadcastValue {
+			text-align:right;
+			left:83%;
+			top: 13%;
+			width:45px;
+		}
+
+		.playingSong {
+			left: 3%;
+			top: 13%;
+			}				
+		
+		.playingArtist {
+			left: 3%;
+			top: 70%;
+		}
+		
+
+		
+	/*
+		
+		.curPlayTime {
+			left:-4px;
+			top:-39px;
+		}
+		
+		.playingBroadcast {
+			left: -4px;
+			top:-50px;
+		}
+		.playingSong {
+			left: 6px;
+			top:-39px;
+			}				
+		
+		.playingArtist {
+			left: 6px;
+			top:-50px;
+		}
+		
+		*/

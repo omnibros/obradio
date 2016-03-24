@@ -1,0 +1,11 @@
+{
+     "android": {
+         "release": {
+             "keystore": "c:\\obradio.keystore",
+             "storePassword": "my@CC355",
+             "alias": "omnibros",
+             "password" : "my@CC355",
+             "keystoreType": ""
+         }
+     }
+ }
